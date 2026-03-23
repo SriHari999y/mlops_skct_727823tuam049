@@ -1,0 +1,13 @@
+$schema: https://azuremlschemas.azureedge.net/latest/pipelineJob.schema.json
+type: pipeline
+experiment_name: 727823TUAM049
+
+jobs:
+  data_prep:
+    command: python data_prep.py
+
+  train:
+    command: python train_pipeline.py
+
+  evaluate:
+    command: python evaluate.py
